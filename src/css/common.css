@@ -18,8 +18,9 @@ img {
 }
 
 button {
-  padding: 20px 40px;
+  padding: 15px 40px;
   margin: 0 auto;
   background-color: rgb(215, 123, 139);
   font-size: 25px;
+  cursor: pointer;
 }
