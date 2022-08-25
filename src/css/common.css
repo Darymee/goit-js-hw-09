@@ -18,9 +18,9 @@ img {
 }
 
 button {
-  padding: 15px 40px;
+  padding: 10px 20px;
   margin: 0 auto;
-  background-color: rgb(215, 123, 139);
+  background-color: rgba(235, 165, 117, 0.624);
   font-size: 25px;
   cursor: pointer;
 }
