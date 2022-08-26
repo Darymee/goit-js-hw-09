@@ -24,3 +24,29 @@ button {
   font-size: 25px;
   cursor: pointer;
 }
+
+.timer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 100px;
+  font-family: fantasy;
+  color: rgba(241, 131, 58, 0.624);
+}
+
+.label {
+  font-size: 45px;
+
+  font-family: monospace;
+  font-weight: bold;
+  color: rgba(239, 101, 10, 0.624);
+}
