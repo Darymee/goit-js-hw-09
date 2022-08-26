@@ -30,7 +30,7 @@ const options = {
       refs.btnStart.disabled = true;
     } else {
       refs.btnStart.disabled = false;
-      Notiflix.Notify.success('This time is right');
+      Notiflix.Notify.success('This is correct time');
       SELECTED_DAY = selectedDates[0];
     }
   },
