@@ -14,12 +14,12 @@ function onBtnSubmit(e) {
 
   for (let i = 1; i <= amountValue; i += 1) {
     createPromise(i, delayValue)
-      .then((position, delay) => {
+      .then(({ position, delay }) => {
         Notiflix.Notify.success(
           `✅ Fulfilled promise ${position} in ${delay}ms`
         );
       })
-      .catch((position, delay) => {
+      .catch(({ position, delay }) => {
         Notiflix.Notify.failure(
           `❌ Rejected promise ${position} in ${delay}ms`
         );
@@ -33,9 +33,9 @@ function createPromise(position, delay) {
     setTimeout(() => {
       const shouldResolve = Math.random() > 0.3;
       if (shouldResolve) {
-        resolve(position, delay);
+        resolve({ position, delay });
       } else {
-        reject(position, delay);
+        reject({ position, delay });
       }
     }, delay);
   });
