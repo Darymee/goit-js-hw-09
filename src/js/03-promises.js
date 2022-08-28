@@ -25,6 +25,7 @@ function onBtnSubmit(e) {
         );
       });
     delayValue += stepValue;
+    e.currentTarget.reset();
   }
 }
 
